@@ -40,7 +40,6 @@ public class FetchHtml {
     }
 
     public static void fetch_html() throws IOException {
-
         System.setProperty("webdriver.gecko.driver", ".\\bin\\firefox.exe");
         DesiredCapabilities dc = new DesiredCapabilities();
         dc.setJavascriptEnabled(false);
@@ -61,8 +60,6 @@ public class FetchHtml {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
         String date = simpleDateFormat.format(new Date());
         Varibles.dates_list.add(date);
-
     }
-
 
 }

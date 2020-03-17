@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="642.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Controller">
+   <children>
+      <AreaChart fx:id="cases_graph" layoutX="6.0" layoutY="-1.0" prefHeight="214.0" prefWidth="310.0" style="-fx-background-color: #333333;" stylesheets="@../../../style.css" AnchorPane.bottomAnchor="-3.4000000000000057" AnchorPane.rightAnchor="283.6" AnchorPane.topAnchor="-1.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" tickLabelFill="#333333">
+               <tickLabelFont>
+                  <Font name="System Bold" size="1.0" />
+               </tickLabelFont>
+            </CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" tickLabelFill="WHITE">
+               <tickLabelFont>
+                  <Font size="13.0" />
+               </tickLabelFont>
+            </NumberAxis>
+        </yAxis>
+      </AreaChart>
+      <AreaChart fx:id="deaths_chart" layoutX="292.0" layoutY="-1.0" prefHeight="214.0" prefWidth="310.0" stylesheets="@../../../style.css" AnchorPane.bottomAnchor="-3.4000000000000057" AnchorPane.rightAnchor="-2.3999999999999773" AnchorPane.topAnchor="-1.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" tickLabelFill="#333333" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" tickLabelFill="WHITE">
+               <tickLabelFont>
+                  <Font size="13.0" />
+               </tickLabelFont>
+            </NumberAxis>
+         </yAxis>
+      </AreaChart>
+      <Text fx:id="cases" fill="WHITE" layoutX="137.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cases: " AnchorPane.rightAnchor="394.224609375" AnchorPane.topAnchor="2.1806640625">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="deaths" fill="WHITE" layoutX="434.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deaths:" AnchorPane.bottomAnchor="177.2275390625" AnchorPane.rightAnchor="90.58740234375" AnchorPane.topAnchor="1.5724609375000007">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="392.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Software Created by Alex Zaslavskis" wrappingWidth="193.33663940429688" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="14.663360595703125" />
+   </children>
+</AnchorPane>
